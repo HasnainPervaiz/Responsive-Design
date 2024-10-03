@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section1{
+    width: 100%;
+    min-height: 60vh;
+    background-color: violet;
+    background-image: url("Mountain.jpg");
+    background-size: cover;
+    background-position: 50% 60%;   /**Pictures Height will be 60% and width 50%**/
+}
+
+.overlay{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+}
+
+.text{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 10%;        /**This means that text will be 10% above bottom**/
+    color: coral;
+}
+
+.text h1{
+    font-size: 6vw;
+}
+
+.textright{
+    color: red;
+    display: flex;
+    width: 60%;
+    gap: 100px;
+    color: coral;
+    line-height: 20px;
+}
+
+.textright p{
+    font-size: 17px;
+    align-items: center;
+    width: 30%;
+}
+
+.section2{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+
+.box1{
+    width: 25%;
+    min-height: inherit;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+.box1 p{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.box2{
+    width: 25%;
+    min-height: inherit;
+    background-color: yellow;
+    background-image: url("Gliding.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.box3{
+    width: 20%;
+    min-height: inherit;
+}
+
+.top{
+    width: 100%;
+    min-height: 20vh;
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+}
+
+.top p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("orange.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.box4{
+    width: 30%;
+    min-height: inherit;
+    padding: 20px;
+    background-color: #444;
+    color: whitesmoke;
+}
+
+.notification{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.notification .photo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notification p{
+    width: 90%;
+    font-size: 13px;
+}
+
+@media(max-width: 500px){
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1{
+        font-size: 10vw;
+    }
+
+    .section2{
+        min-height: 20vh;
+    }
+
+    .overlay .text .textright{
+        flex-direction: column;
+    }
+
+    .overlay .text .textright p{
+        width: initial;
+        margin-top: 20px;
+    }   
+
+    .overlay .text .textright .icons{
+        margin-top: 30px;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+
+    .box1{
+        width: 86.5%;
+    }
+
+    .box2{
+        width: 100%;
+
+    }
+
+    .box3{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .top{
+        width: 95.5%;
+    }
+
+    .bottom{
+        min-height: 40vh;
+    }
+
+    .box4{
+        width: 91%;
+    }
+}
